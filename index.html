@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>RegisterForm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+		rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="form-wrapper">
+		<form action="#" class="form" method="POST">
+			<h1 class="form-title">Registration</h1>
+			<div class="form-input-wrapper">
+				<div class="form-input-element">
+					<label for="" class="form-input-label">Full Name</label>
+					<input type="text" class="form-input" placeholder="Enter your name" required autocomplete="off"
+						name="fullName">
+				</div>
+				<div class="form-input-element">
+					<label for="" class="form-input-label">Username</label>
+					<input type="text" class="form-input" placeholder="Enter your username" required autocomplete="off"
+						name="userName">
+				</div>
+				<div class="form-input-element">
+					<label for="" class="form-input-label">Email</label>
+					<input type="email" class="form-input" placeholder="Enter your email" required autocomplete="off"
+						name="email">
+				</div>
+				<div class="form-input-element">
+					<label for="" class="form-input-label">Phone Number</label>
+					<input type="tel" class="form-input" placeholder="Enter your number" required autocomplete="off"
+						name="phone">
+				</div>
+				<div class="form-input-element">
+					<label for="" class="form-input-label">Password</label>
+					<input type="password" class="form-input" placeholder="Enter your password" required
+						autocomplete="off" name="password">
+				</div>
+				<div class="form-input-element">
+					<label for="" class="form-input-label">Confirm Password</label>
+					<input type="password" class="form-input" placeholder="Confirm your password" required
+						autocomplete="off" name="confPassword">
+				</div>
+			</div>
+
+			<p class="form-radio-title">Gender</p>
+
+			<div class="form-radio-wrapper">
+
+				<label class="form-radio-label">
+					<input type="radio" class="form-radio" name="gender" value="male" checked>
+					<span class="fake-radio"></span>
+					Male
+				</label>
+
+
+
+				<label class="form-radio-label">
+					<input type="radio" class="form-radio" name="gender" value="female">
+					<span class="fake-radio"></span>
+					Female
+				</label>
+
+
+				<label class="form-radio-label">
+					<input type="radio" class="form-radio" name="gender" value="not-to-say">
+					<span class="fake-radio"></span>
+					Prefer not to say
+				</label>
+
+			</div>
+
+			<input class="form-button" type="submit" value="Register">
+
+		</form>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+input{
+	outline: none;
+	box-sizing: border-box;
+}
+
+.form-wrapper{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to left top , #9b59b6,  #71b7e6 );
+	box-sizing: border-box;
+	padding: 10px 15px;
+}
+
+.form{
+	width: 650px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 30px;
+}
+
+.form-title{
+	font-weight: 500;
+	font-size: 25px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.form-title::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 30px;
+	height: 3px;
+	background: linear-gradient(-90deg , #9b59b6,  #71b7e6 );
+	
+}
+
+.form-input-wrapper{
+	height: 270px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	
+}
+
+.form-input-element{
+	 flex-basis: 46%;
+}
+
+
+.form-input-label{
+	display: block;
+	font-weight: 500;
+	margin-bottom: 8px;
+}
+
+.form-input{
+	width: 100%;
+	font-size: 16px;
+	padding: 9px 15px;
+	border-radius: 5px;
+	font-family: 'Poppins', sans-serif;
+	border: 1px solid #ccc;
+	border-bottom-width: 2px;
+}
+
+.form-input:focus{
+	border-color: #9b59b6
+}
+
+.form-radio-wrapper{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+	
+.form-radio-title{
+	margin-top: 20px;
+	font-weight: 500;
+	font-size: 20px;	
+}	
+		
+.form-radio{
+	display: none;
+}
+
+.form-radio-label{
+	padding-left: 27px;
+	position: relative;
+}
+
+.form-radio-label:last-child{
+	margin-right: 120px;
+}
+	
+.fake-radio{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-color: lightgray;
+	border-radius: 50%;
+	margin-top: -9px;
+	position: absolute;
+	top:50%;
+	left:0;
+}
+
+
+.fake-radio::after{
+	content:"";
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background-color: darkviolet;
+	border-radius: 50%;
+	top:5px;
+	left:5px;
+	display: none;
+}	
+	
+.form-radio:checked ~ .fake-radio::after{
+	display: block;
+}	
+	
+.form-button{
+	font-size: 20px;
+	color:#fff;
+	font-weight: 500;
+	font-family:'Poppins', sans-serif; ;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin-bottom: 30px;
+	background: linear-gradient(-90deg , #9b59b6,  #71b7e6 );
+}	
+
+
+
+@media (min-width: 992px) {
+	.form-button:hover{
+		background: linear-gradient(90deg , #9b59b6,  #71b7e6 );
+	}	
+
+}
+	
+	
+@media (max-width: 600px) {
+	.form-input-wrapper{
+		overflow: scroll;
+		-ms-overflow-style: none;  
+		scrollbar-width: none; 
+	}
+	
+	.form-input-wrapper::-webkit-scrollbar { width: 0; }
+	
+	.form-input-element{
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
+	
+	.form-input-element:last-child{
+		margin-bottom: 0;
+	}
+	
+	.form-radio-label:last-child{
+		margin-right: 0;
+	}
+}
+	
+
+@media (max-width: 450px) {
+	.form-radio-wrapper{	
+		flex-direction: column;
+	}
+	
+	.form-radio-label{
+		margin-bottom: 8px;
+	}
+	
+	.form-radio-label:last-child{
+		margin-bottom: 0;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
